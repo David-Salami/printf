@@ -48,7 +48,8 @@ return (cont);
 if (aux == '%')
 {
 flag++;
-} else
+}
+else
 {
 cont_fm = function_manager(aux, arg);
 if (cont_fm >= 0 && cont_fm != -1)
@@ -58,7 +59,8 @@ aux = string[i];
 if (aux == '%')
 flag--;
 cont = cont + cont_fm;
-} else if (cont_fm == -1 && aux != '\n')
+}
+else if (cont_fm == -1 && aux != '\n')
 {
 cont += _putchar('%');
 }
